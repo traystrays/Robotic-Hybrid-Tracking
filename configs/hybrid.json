@@ -1,0 +1,28 @@
+{
+  "charuco": {
+    "square_length": 0.017,
+    "marker_length": 0.012,
+    "dictionary": "DICT_4X4_50",
+    "num_rows": 5,
+    "num_cols": 7
+  },
+  "NDI_position": {
+    "x": 0.19,
+    "y": 0.16,
+    "z": 0.02
+  },
+  "calib": {
+    "intrsinsics": "configs/intrinsics.json",
+    "ndi_to_robot": "configs/ndi_to_robot.json",
+    "robot_to_camera": "configs/robot_to_camera.json",
+    "ndi_to_marker": "configs/ndi_to_marker.json"
+  },
+  "input": {
+    "video": "data/video.mp4",
+    "si_data": "data/tracking.csv"
+  },
+  "marker_R_board": null,
+  "output": {
+    "board_points": "results/board_points.npz"
+  }
+}
