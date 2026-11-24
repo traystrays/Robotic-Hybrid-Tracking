@@ -2,5 +2,5 @@
 
 
 def main():
-    from hybrid_tracking.pipeline import run
+    from hybrid_tracking.evaluate import main as run
     run()

@@ -1,0 +1,86 @@
+[
+  {
+    "source": "../charuco_with_apple1_post.scad",
+    "sha256": "40015beb33b77aec0d57ec654adeca8a4b1cc5c16e6fccec431326a191b847e0",
+    "charuco": {
+      "num_cols": 8,
+      "num_rows": 6,
+      "square_length": 0.019,
+      "marker_length": 0.015,
+      "dictionary": "DICT_4X4_250",
+      "legacy_pattern": true
+    },
+    "cross_center_board_m": [
+      0.157,
+      0.119,
+      -0.004
+    ],
+    "positive_x_post_base_board_m": [
+      0.19779410000000003,
+      0.119,
+      0.0059999
+    ],
+    "positive_x_arm_length_m": 0.0407941,
+    "board_surface_height_cad_m": 0.004,
+    "cad_R_board": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "note": "Cross center z is the CAD underside plane, not an inferred reflector-center plane. ROM-to-CAD registration is separate."
+  },
+  {
+    "source": "../3d_printed_charuco/charuco_with_apple1_post.scad",
+    "sha256": "21a2cdea7522f963f4aecc0bd778196f43399d7de8d6a0f4f79d706993ff5771",
+    "charuco": {
+      "num_cols": 8,
+      "num_rows": 6,
+      "square_length": 0.017,
+      "marker_length": 0.013,
+      "dictionary": "DICT_4X4_250",
+      "legacy_pattern": true
+    },
+    "cross_center_board_m": [
+      0.146,
+      0.112,
+      -0.004
+    ],
+    "positive_x_post_base_board_m": [
+      0.18679410000000002,
+      0.112,
+      0.0059999
+    ],
+    "positive_x_arm_length_m": 0.0407941,
+    "board_surface_height_cad_m": 0.004,
+    "cad_R_board": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "note": "Cross center z is the CAD underside plane, not an inferred reflector-center plane. ROM-to-CAD registration is separate."
+  }
+]

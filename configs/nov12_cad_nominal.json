@@ -1,0 +1,85 @@
+{
+  "charuco": {
+    "num_cols": 8,
+    "num_rows": 6,
+    "square_length": 0.0168,
+    "marker_length": 0.013,
+    "dictionary": "DICT_4X4_250",
+    "legacy_pattern": true
+  },
+  "NDI_position": {
+    "x": 0.146,
+    "y": 0.112,
+    "z": 0.01393
+  },
+  "input": {
+    "video": "data/20261112_hybrid/video_stream_1_20261112_181033.mp4",
+    "timestamps": "data/20261112_hybrid/video_stream_1_20261112_181033_timestamps.txt",
+    "robot": "data/20261112_hybrid/data_local_part_1_12_11_2026_18_10_49_pose.csv",
+    "ndi": "data/20261112_hybrid/data12-11-2026_18-07-27_apple.csv",
+    "ndi_tool_id": 1,
+    "timezone": "Etc/GMT+8",
+    "ndi_mode": "static",
+    "static_pose_confirmed": true,
+    "max_robot_dt_s": 0.05,
+    "max_ndi_dt_s": 0.05,
+    "static_pose_index": 0
+  },
+  "marker_R_board": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "output": {
+    "directory": "results/nov12_cad_17mm_nominal",
+    "annotated_video": true,
+    "keypoint_radius_px": 6,
+    "hold_nearest_robot_pose": true
+  },
+  "calibration": {
+    "ndi_T_base": {
+      "path": "data/20261112_hybrid/20261112_tracy/1435_pos_axyb.npz",
+      "key": "ndi_T_base"
+    },
+    "ecm_T_camera": {
+      "path": "../NDI_robot_calibration/data/si_robot/hand_eye_0727_python.npz",
+      "key": "X"
+    },
+    "intrinsics": {
+      "path": "../NDI_robot_calibration/data/si_robot/camera_intrinsics.npz",
+      "key": "K"
+    },
+    "distortion": {
+      "path": "../NDI_robot_calibration/data/si_robot/camera_intrinsics.npz",
+      "key": "distCoeffs"
+    }
+  },
+  "geometry_provenance": {
+    "source": "../3d_printed_charuco/charuco_with_apple1_post.scad",
+    "sha256": "21a2cdea7522f963f4aecc0bd778196f43399d7de8d6a0f4f79d706993ff5771",
+    "status": "provisional CAD interpretation",
+    "assumptions": [
+      "Use the user-confirmed 17 mm-square, 13 mm-marker SCAD version in 3d_printed_charuco.",
+      "Tracked marker axes equal the labeled CAD cross axes.",
+      "Tracked origin is the cross intersection at CAD z=0 (underside); reflector-center height is not established.",
+      "Video wall-clock timestamps interpreted at UTC-08:00 to align with robot epoch times; installed America/Vancouver rules give UTC-07:00 for this date. Clock interpretation is inferred from recording times."
+    ],
+    "positive_x_post_base_board_m": [
+      0.18679410000000002,
+      0.112,
+      0.0059999
+    ]
+  }
+}

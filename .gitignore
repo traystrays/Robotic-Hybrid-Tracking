@@ -1,10 +1,30 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 build/
 dist/
 wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
+
+# Local shell settings and macOS metadata
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Local recordings and generated evaluation artifacts
+/data
+/results/
+/configs/*.local.json
+/configs/intrinsics.json
+/configs/ndi_to_robot.json
+/configs/robot_to_camera.json
+/configs/ndi_to_marker.json

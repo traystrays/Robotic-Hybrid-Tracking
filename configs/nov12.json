@@ -1,0 +1,50 @@
+{
+  "charuco": {
+    "num_cols": 8,
+    "num_rows": 6,
+    "square_length": 0.017,
+    "marker_length": 0.013,
+    "dictionary": "DICT_4X4_250",
+    "legacy_pattern": true
+  },
+  "NDI_position": {
+    "x": 0.146,
+    "y": 0.112,
+    "z": -0.004
+  },
+  "input": {
+    "video": "data/20261112_hybrid/video_stream_1_20261112_181033.mp4",
+    "timestamps": "data/20261112_hybrid/video_stream_1_20261112_181033_timestamps.txt",
+    "robot": "data/20261112_hybrid/data_local_part_1_12_11_2026_18_10_49_pose.csv",
+    "ndi": "data/20261112_hybrid/data12-11-2026_18-07-27_apple.csv",
+    "ndi_tool_id": 1,
+    "timezone": "America/Vancouver",
+    "ndi_mode": "static",
+    "static_pose_confirmed": true,
+    "max_robot_dt_s": 0.05,
+    "max_ndi_dt_s": 0.05,
+    "static_pose_index": 0
+  },
+  "marker_R_board": null,
+  "output": {
+    "directory": "results/nov12"
+  },
+  "calibration": {
+    "ndi_T_base": {
+      "path": "data/20261112_hybrid/20261112_tracy/1435_pos_axyb.npz",
+      "key": "ndi_T_base"
+    },
+    "ecm_T_camera": {
+      "path": "../NDI_robot_calibration/data/si_robot/hand_eye_0727_python.npz",
+      "key": "X"
+    },
+    "intrinsics": {
+      "path": "../NDI_robot_calibration/data/si_robot/camera_intrinsics.npz",
+      "key": "K"
+    },
+    "distortion": {
+      "path": "../NDI_robot_calibration/data/si_robot/camera_intrinsics.npz",
+      "key": "distCoeffs"
+    }
+  }
+}
